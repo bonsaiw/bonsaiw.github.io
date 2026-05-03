@@ -292,6 +292,18 @@ nav.scrolled .nav-links a { color: var(--text-mid); }
 .form-note { font-size: 12px; color: rgba(245,240,232,0.3); font-style: italic; text-align: center; margin-top: 14px; }
 .form-dev-note { font-size: 11px; color: rgba(201,169,110,0.4); font-style: italic; text-align: center; margin-top: 6px; }
 
+/* DIEM SECTION */
+.diem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.diem-text p { font-size: 15px; line-height: 1.85; color: rgba(245,240,232,0.6); margin-bottom: 18px; }
+.diem-note { font-size: 13px; color: rgba(245,240,232,0.4); font-style: italic; }
+.diem-box { border-left: 3px solid var(--gold); padding: 32px 36px; background: rgba(201,169,110,0.06); }
+.diem-box-label { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.diem-box-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-style: italic; color: var(--cream); line-height: 1.4; margin-bottom: 28px; }
+.diem-modules { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.diem-module { padding: 14px 16px; border: 0.5px solid rgba(201,169,110,0.2); }
+.diem-module span { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 6px; }
+.diem-module p { font-size: 13px; color: rgba(245,240,232,0.65); }
+
 /* FOOTER */
 footer {
   background: #111A12;
@@ -320,7 +332,7 @@ footer {
   .hero { padding: 120px 24px 70px; }
   .section, .section-alt, .section-dark, .section-mid { padding: 70px 24px; }
   .workbook-band { padding: 60px 24px; }
-  .relation-grid, .workbook-inner, .team-grid, .testimonials-grid { grid-template-columns: 1fr; }
+  .relation-grid, .workbook-inner, .team-grid, .testimonials-grid, .diem-grid { grid-template-columns: 1fr; }
   .results-grid { grid-template-columns: 1fr; }
   .result-full { grid-column: 1; }
   .form-grid { grid-template-columns: 1fr; }
@@ -366,6 +378,31 @@ footer {
         On peut performer et sentir un vide. On peut faire de l'argent et être désaligné.<br><br>
         Moi, je crois qu'on peut faire les deux : être solide financièrement, et profondément en paix."<br><br>
         <small style="font-size:13px; font-style:normal; letter-spacing:0.1em; color:var(--gold); font-family:'Jost',sans-serif;">— Dominique Gonthier, Fondateur</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S2B — LA FONDATION DIEM -->
+<section class="section-dark">
+  <div class="inner">
+    <div class="section-label" style="color:var(--gold);">La Fondation</div>
+    <h2 class="section-title-light">Avant les finances,<br><em>on pose les bases.</em></h2>
+    <div class="diem-grid">
+      <div class="diem-text">
+        <p>Parce qu'on ne peut pas bâtir une vie financière solide sur des fondations fragiles.</p>
+        <p>Les deux premiers mois de l'accompagnement sont ancrés dans 4 modules vécus ensemble — un programme qui transforme en profondeur avant même de toucher aux chiffres.</p>
+        <p class="diem-note">Un guide d'accompagnement en français est remis à chaque session.</p>
+      </div>
+      <div class="diem-box">
+        <p class="diem-box-label">Programme DIEM — Dr James Rouse</p>
+        <p class="diem-box-title">L'Art de Chaque Jour</p>
+        <div class="diem-modules">
+          <div class="diem-module"><span>Module 1</span><p>Sens &amp; Intention</p></div>
+          <div class="diem-module"><span>Module 2</span><p>Résilience</p></div>
+          <div class="diem-module"><span>Module 3</span><p>Énergie</p></div>
+          <div class="diem-module"><span>Module 4</span><p>Authenticité</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -417,6 +454,11 @@ footer {
   <div class="inner">
     <div class="section-label reveal">Ce que tu reçois</div>
     <div class="included-grid">
+      <div class="included-card reveal">
+        <span class="card-tag">Fondation · Mois 1 &amp; 2</span>
+        <h3>Programme DIEM — Dr James Rouse</h3>
+        <p>4 modules vidéo sur le sens, la résilience, l'énergie et l'authenticité. Visionné ensemble, rencontre par rencontre. Guide d'accompagnement en français inclus à chaque session.</p>
+      </div>
       <div class="included-card reveal">
         <h3>L'accompagnement avec Dominique &amp; Scott</h3>
         <p>Suivi personnalisé intégrant la clarté financière, le mieux-être et le mindset. Une relation humaine, pas un service transactionnel.</p>
@@ -479,7 +521,7 @@ footer {
         <div class="step-num">04</div>
         <div class="step-body">
           <h3>L'accompagnement</h3>
-          <p>Suivi hebdomadaire avec Dominique et Scott sur idéalement 3 mois. Le workbook complet est activé. Le programme Optimized Body démarre avec Olivier.</p>
+          <p>Suivi hebdomadaire avec Dominique et Scott sur idéalement 3 mois. Les rencontres aux 2 semaines s'appuient sur DIEM comme fondation de bien-être pour les 2 premiers mois, puis intègrent le workbook BONSAÏ pour la clarté financière.</p>
         </div>
       </div>
       <div class="step reveal">
@@ -502,7 +544,7 @@ footer {
         <div class="team-role">Fondateur &amp; coach financier conscient</div>
         <h3>Dominique Gonthier</h3>
         <div class="team-bio-titles">Courtier hypothécaire · Représentant en épargne collective · Expert en Manœuvre Smith et optimisation financière · Conseiller en finance holistique</div>
-        <p>Inspiré du mentorat de Dr James Rouse, des enseignements de Cal Newport et de Samir Reithi de Finance Wellness.</p>
+        <p>Accompagné et mentoré par Dr. James Rouse, dont le programme DIEM forme la fondation de l'accompagnement bien-être. Également inspiré des enseignements de Cal Newport et de Samir Reithi de Finance Wellness.</p>
         <div class="team-offer">
           <em>"Je ne veux pas juste optimiser tes finances. Je veux être ton point d'ancrage — quelqu'un en qui tu as confiance, qui t'accompagne à avancer avec clarté, confiance et paix d'esprit."</em><br><br>
           Dominique compose et enregistre également des méditations financières personnalisées pour chacun de ses clients — une création privée, unique, offerte dans le cadre de l'accompagnement.
@@ -716,7 +758,7 @@ const observer = new IntersectionObserver((entries) => {
       e.target.classList.add('visible');
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
